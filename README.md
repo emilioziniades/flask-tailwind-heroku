@@ -44,7 +44,7 @@ You should see some output from Flask telling you the port where your developmen
 
 ## Deploy to Heroku
 
-Finally, we want to deploy to Heroku. This document uses the Heroku CLI tool, so ensure that you can run `heroku` at the command line. If you can't, follow the install instructions [here](https://devcenter.heroku.com/articles/heroku-cli)
+Finally, we want to deploy to Heroku. This document uses the Heroku CLI tool, so ensure that you can run `heroku` at the command line. If you can't, follow the install instructions [here](https://devcenter.heroku.com/articles/heroku-cli).
 
 Login to Heroku, make an account if you don't have one, and create a new project.
 
