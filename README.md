@@ -6,7 +6,7 @@ Heroku is great for quickly deploying your apps.
 
 I put them together into a template so that you don't have to.
 
-## Usage
+## Installation
 
 Clone the repository
 
@@ -41,5 +41,31 @@ $ make run
 ```
 
 You should see some output from Flask telling you the port where your development server is running. Visit the link make sure you can see the welcome message.
+
+## Deploy to Heroku
+
+Finally, we want to deploy to Heroku. This document uses the Heroku CLI tool, so ensure that you can run `heroku` at the command line. If you can't, follow the install instructions [here](https://devcenter.heroku.com/articles/heroku-cli)
+
+Login to Heroku, make an account if you don't have one, and create a new project.
+
+First, login on the Heroku CLI
+
+```
+$ heroku login
+```
+
+Then, add heroku as a remote for the repository
+
+```
+$ heroku git:remote -a [project-title]
+```
+
+Every time you update the changes, you can run the following command to trigger a rebuild and deploy.
+
+```
+$ git push heroku main
+```
+
+## Usage
 
 From here on, you're on your own. Go wild, make something pretty, and do it fast!
